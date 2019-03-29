@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FORM</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Please Login</h1>
+		<hr>
+		<fieldset>
+		<legend>LOGIN</legend>
+		<form name="f1" action="abc.html" method="post">
+		<h2>
+			Username:<input type="text" name="un"><br>
+			Password:<input type="password" name="pwd"><br><br>
+			<input type="submit" name="b1" value="LOGIN">
+			<input type="reset" name="b2" value="CLEAR">
+			<input type="button" name="b3" value="EXIT">
+		</h2>
+		</form>
+		</fieldset>
+		<fieldset>
+		<legend>Personal Information</legend>
+		<form name="f2" action="tab.html">
+		<h2>
+			Enter name:<input type="text" name="t1"><br>
+			Qualification:<select>
+						<option>Select qualification</option>
+						<option>BE</option>
+						<option>btECH</option>
+						<option>MTECH</option>
+						<option>MCA</option>
+						<option>phd</option>
+					</select>
+				<input type="checkbox" name="employed"> Employed<br>
+				Gender:<input type="radio" name="g1" value="male">Male
+					<input type="radio" name="g1" value="female">Female<br>
+				Resume:<input type="file" name="resume"><br><br>
+				<input type="submit" name="b1" value="SUBMIT">
+				<input type="reset" name="b1" value="RESET">
+		</h2>
+		</form>
+		</fieldset>
+	</body>
+</html>

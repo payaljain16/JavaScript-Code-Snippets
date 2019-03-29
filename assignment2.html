@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ASSIGNMENT 2 REGISTER</title>
+		<meta charset="UTF-8">
+		<script>
+			function close1()
+			{
+				var res=confirm("Do you want to close the window");
+				if(res)
+				{
+					close();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Please Enter Your Details</h1>
+		<hr>
+		<form name="f1" action="abc.html" method="post">
+		<h2>
+			Username:<input type="text" name="un"><br>
+			Password:<input type="password" name="pwd"><br>
+			Confirm Password:<input type="password" name="pwd1"><br>
+			Age:<input type="text" name="age"><br>
+			Designation:<input type="text" name="desig"><br><br>
+			<input type="submit" name="b1" value="REGISTER">
+			<input type="reset" name="b2" value="CLEAR">
+			<input type="button" name="b3" value="CLOSE" onClick="close1()">
+		</h2>
+		</form>
+		
+	</body>
+</html>

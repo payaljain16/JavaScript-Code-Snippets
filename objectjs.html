@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script>
+			function Employee(name,age,sal)
+			{
+				this.name=name;
+				this.age=age;
+				this.sal=sal;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Object Demo</h1>
+		<hr>
+		<h2>
+		<script>
+			var obj=new Object();
+			obj.name="ravi";
+			obj.age=25;
+			document.write("<br>name:"+obj.name);
+			document.write("<br>age:"+obj.age);
+			obj.salary=15000;
+			document.write("<br>Salary:"+obj.salary);
+		</script>
+		<hr>
+		<script>
+				//Creating json object- javascript object notation
+
+			var emp={'Name':'Pratap','Age':25,'Salary':2000};
+			document.write("<br>Name:"+emp.Name);
+			document.write("<br>Age:"+emp.Age);
+			document.write("<br>salary:"+emp.Salary);
+		</script>
+		<hr>
+		<script>
+			//creating function constructor object
+
+			var e1=new Employee("Sudheer",25,45600);
+			var e2=new Employee("payal",22,45600000);
+			document.write("<br>name:"+e1.name);
+			document.write("<br>Age:"+e1.age);
+			document.write("<br>sal:"+e1.sal);
+			document.write("<br>");
+			document.write("<br>name:"+e2.name);
+			document.write("<br>Age:"+e2.age);
+			document.write("<br>sal:"+e2.sal);
+		</script>
+		<hr>
+		<script>
+			var arr=new Array(2);
+			arr[0]=12;
+			arr[1]=22;
+			arr[2]=32;
+			arr[3]=42;
+			arr[5]="hii";
+			arr[6]=new Date();
+			for(i=0;i<arr.length;i++)
+			{
+				document.write("<br>"+arr[i]);
+			}
+		</script>
+		</h2>
+	</body>
+</html>

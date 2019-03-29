@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script>
+			function abc()
+			{
+				alert("hello");
+			}
+			function xyz()
+			{
+				var res=confirm("Do you want to close the window");
+				if(res)
+				{
+					close();
+				}
+			}
+			function atoz()
+			{
+				//var name=prompt("enter name:");
+				//document.write("<hr>Welcome:"+name);
+				var age=prompt("enter age:");
+				alert("is it not a number?"+isNaN(age));
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>JavaScript Demo</h1>
+		<hr>
+		<script>
+			for(i=1;i<=10;i++)
+			{
+				document.write("<h2>hello everybody</h2>");
+			}
+		</script>
+		<hr>
+		<script>
+			var x=10
+			x="hi"
+			x=true
+			x=1.45
+			x="105ABC"
+			document.write("<br>"+(parseInt(x)+5))
+		</script>
+		<hr>
+		<script>
+				alert("demo");
+		</script>
+		<input type="button" name="b1" value="CLICK" onClick="abc()">
+		<input type="button" name="b2" value="CLOSE" onClick="xyz()">
+		<input type="button" name="b3" value="Name" onClick="atoz()">
+	</body>
+</html>

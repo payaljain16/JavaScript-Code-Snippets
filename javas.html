@@ -1,0 +1,56 @@
+<html>  //these are BOM objects
+	<head>
+		<script>
+		</script>
+	</head>
+	<body>
+		<h1>OBJECT DEMO</h1>
+		<hr>
+		<h2>
+		<script>
+			var d1=new Date();
+			document.write(d1);
+			d1.setMonth(5);    //just like java evaluated   june 2019
+			document.write("<br>"+d1)
+			d1.setMonth(25);    //just like java evaluated   feb 2021
+			document.write("<br>"+d1)
+		</script>
+		<hr>
+		<script>
+			var s1="2+2*4-5";
+			var s2=new String("2+2*4-5");
+			document.write("<br>"+s1);
+			document.write("<br>"+s2);
+			document.write("<br>"+eval(s1));
+			document.write("<br>"+eval(s2));
+			document.write("<br>"+eval(s2.valueOf()));//to convert string object to literal
+			document.write("<br>"+"hello".toUpperCase());
+
+			var s3="hiiii";
+			var s4=new String("hiiiii");
+			document.write("<br>"+s3.toUpperCase());//func works on both literal and object
+			document.write("<br>"+s4.toUpperCase());
+		</script>
+		<hr>
+		<script>
+			var b1=new Boolean(true);     //true
+			var b2=new Boolean("false");  //true
+			var b3=new Boolean(1);		//true
+			var b4=new Boolean(0);		//false
+			var b5=new Boolean(null);	//false
+			var b6=new Boolean("hi");	//true
+			var b7=new Boolean("");	      //false
+			var b8=new Boolean(" ");	//true
+
+			document.write("<br>"+b1);
+			document.write("<br>"+b2);
+			document.write("<br>"+b3);
+			document.write("<br>"+b4);
+			document.write("<br>"+b5);
+			document.write("<br>"+b6);
+			document.write("<br>"+b7);
+			document.write("<br>"+b8);
+		</script>
+		</h2>
+	</body>
+</html>

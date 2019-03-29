@@ -1,0 +1,44 @@
+<html>    //dom demo comments
+	<head>
+		<script>
+			function fn()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var fullname=first+" "+last;
+				document.getElementByName();   //(specific name like="t1")
+				document.getElementByTagName("input"); //all div, input types(common)
+				document.getElementById("s1").innerText=fullname;;  //always unique if t1 common like radio button, also cant rest name string value like this..
+			}
+
+			function login()
+			{
+				if(switch)
+				{
+						var lg1="<html><form name='f1' action='demo.html'><h3>username:<input type="text" name="un"><br>password:<input type="password" name="pwd"><br><br></h3></form></html>";  //put all inner attributes in single quotes, write in single line else shows error as open tags in same line as closing
+
+						document.getElementById("d1").innerHTML=lg1;
+						switch1=false;
+				}
+				else
+				{
+					document.getElementById("d1").innerHTML="";
+						switch1=true;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>DOM DEMO</h1>
+		<hr>
+		<form name="f1">
+		<h2>
+			Enter first name:<input type="text" name="t1"><br>
+			Enter last name:<input type="text" name="t2"><br><br>
+			Your full name:<span id="s1"></span><br><br>
+			<input type="button" name="b1" value="FULLNAME" onClick="fn()">
+			<button type="button" name="b2" onClick="fn()">CLICK HERE</button>
+		</h2>
+		</form>
+	</body>
+</html>

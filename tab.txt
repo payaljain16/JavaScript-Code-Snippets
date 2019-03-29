@@ -1,0 +1,38 @@
+<html>
+	<body>
+		<h1>TABLE DEMO</h1>
+		<hr>
+		<table border=1 width=50% align="center" cellspacing=10 cellpadding=20>
+			<caption>CTS EMployees</caption>
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>SALARY</th>
+				<th>DESIGNATION</th>
+			</tr>
+			<tr>
+				<td>raj</td>
+				<td>22</td>
+				<td>2000000</td>
+				<td>CLERK</td>
+			</tr>
+			<tr>
+				<td>rajUUU</td>
+				<td>22</td>
+				<td>2000000</td>
+				<td>progrmer</td>
+			</tr>
+			<tr>
+				<td>rajHHHHH</td>
+				<td>22</td>
+				<td>2000000</td>
+				<td rowspan=2>CLERK</td>
+			</tr>
+			<tr>
+				<td>raj1111111</td>
+				<td>22</td>
+				<td>2000000</td>
+			</tr>
+		</table>
+	</body>
+</html>

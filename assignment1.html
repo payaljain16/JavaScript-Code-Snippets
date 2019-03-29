@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script>
+			function fn()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var addition=parseInt(first)+parseInt(last);
+			
+				document.getElementById("res").innerText=addition;
+			}
+			function fn1()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var sub=first-last;
+			
+				document.getElementById("res").innerText=sub;
+			}
+
+			function fn2()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var mul=first*last;
+			
+				document.getElementById("res").innerText=mul;
+			}
+
+			function fn3()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var divres=first/last;
+			
+				document.getElementById("res").innerText=divres;
+			}
+			
+	
+		</script>
+	</head>
+	<body>
+		<h1>ASSIGNMENT 1 DEMO</h1>
+		<hr>
+		<form name="f1">
+		<h2>
+			Enter first value:<input type="number" name="t1" required><br>
+			Enter last value:<input type="number" name="t2" required><br><br>
+			Result:<span id="res" style="color:blue"></span><br><br>
+			<input type="button" name="b1" value="ADD" onClick="fn()">
+			<input type="button" name="b2" value="SUBTRACT" onClick="fn1()">
+			<input type="button" name="b3" value="MUL" onClick="fn2()">
+			<input type="button" name="b4" value="DIV" onClick="fn3()">
+			
+		</h2>
+		</form>
+	</body>
+</html>

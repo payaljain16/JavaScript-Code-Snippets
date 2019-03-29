@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script>
+			function check()
+			{
+				if(document.f1.t1.value.length <5)
+				{
+					alert("Username should be of minimum 5 characters");
+					return false;
+				}
+				if(isNaN(document.f1.t3.value))
+				{
+					alert("Age should be a number only");
+					return false;
+				}
+				else
+				{
+					var x=eval(document.f1.t3.value);
+					if(x<=0 || x>99)
+					{
+						alert("Age should be within range 1 to 99");
+						return false;
+					}
+				}
+				return true;
+			}
+			function abc()
+			{
+				window.location.href="http://www.google.com";    //can be html file as well. Also window. word is optional. Way of moving to next page submit button, anchor tag, window.location.
+			}
+		</script>
+	</head>
+	<body>
+		<h1>PLEASE LOGIN</h1>
+		<hr>
+		<form action="abc.html" name="f1" onSubmit="return check()" method="post">
+		<h2>
+			Username:<input type="text" name="t1" required><br>
+			Password:<input type="password" name="t2" required><br><br>
+			Age:<input type="text" name="t3"><br>
+			Salary:<input type="number" name="t4"><br>   //no and email in Html5
+			Email ID:<input type="email" name="t5"><br><br>
+			<input type="submit" value="LOGIN" name="b1">
+			<input type="reset" value="RESET" name="b2">
+			
+		</h2>
+		</form>
+		<hr>
+			<input type="button" name="b1" value="CLICK HERE" onClick="abc()">
+		<hr>
+		<h2>
+		<script>
+			document.write(navigator.appCodeName);   //tell details of browser mostly mozilla cause created by netscape(patented).
+			document.write("<br>"+navigator.appVersion);   //main browser name on whichever running internet explorer, opera, firefox
+		</script>
+		</h2>
+	</body>
+</html>

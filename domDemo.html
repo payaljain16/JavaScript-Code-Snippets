@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script>
+			var switch1=true;
+			function fn()
+			{
+				var first=document.f1.t1.value;
+				var last=document.f1.t2.value;
+				var fullname=first+" "+last;
+			
+				document.getElementById("s1").innerText=fullname;
+			}
+			
+			function login()
+			{
+				if(switch1)
+				{
+						var lg1="<html><form name='f1' action='demo.html'><h3>username:<input type='text' name='un'><br>password:<input type='password' name='pwd'><br><br></h3></form></html>";
+						document.getElementById("d1").innerHTML=lg1;
+						document.getElementById("d1").innerHTML=abc.html;   //wont work, cant be defined like this , not even in single quotes. in quotes string will get printed.
+						switch1=false;
+				}
+				else
+				{
+					document.getElementById("d1").innerHTML="";
+						switch1=true;
+				}
+			}
+
+			function change()
+			{
+				document.getElementById("p1").innerText="HELLOOOOOOO!!!!!!";
+			}
+			function change1()
+			{
+				document.getElementById("i1").src="dd.jfif";  //can use directly .width .height also directly with getElementbyid.
+			}
+		</script>
+	</head>
+	<body>
+		<h1>DOM DEMO</h1>
+		<hr>
+		<form name="f1">
+		<h2>
+			Enter first name:<input type="text" name="t1"><br>
+			Enter last name:<input type="text" name="t2"><br><br>
+			Your full name:<span id="s1" style="color:blue"></span><br><br>
+			<input type="button" name="b1" value="FULLNAME" onClick="fn()">
+			<button type="button" name="b2" onClick="fn()">CLICK HERE</button>
+		</h2>
+		</form>
+		<hr>
+		<hr>
+		<input type="button" value="SHOW/HIDE LOGIN" name="b3" onClick="login()">
+		<div id="d1"></div>
+		<hr>
+		<h2>
+			<p id="p1" onClick="change()"> click on me too see the CHANGE in content.</p>
+			<img src="" id="i1" onClick="change1()" width=200 height=200></img>
+		</h2>
+	</body>
+</html>
